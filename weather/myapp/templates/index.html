@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather </title>
+    <style>
+        body{
+         background-color: pink;
+        }
+        .button{
+            
+             display: flex;
+             justify-content: center;
+        }
+        .input{
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h1 align="center"> Mausham ka haal </h1>
+        <b align="center" class="input">
+        {% csrf_token %}
+        {{form.as_p}}
+        </b>
+        <br>
+        
+        <div class="button">
+            <button type="submit" class="a">LO</button>
+
+        </div>
+    </form>
+</body>
+</html>
